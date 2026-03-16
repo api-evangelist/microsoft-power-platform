@@ -1,5 +1,23 @@
 aid: microsoft-power-platform
+name: Microsoft Power Platform
+description: >-
+  Microsoft Power Platform is a suite of low-code development tools
+  including Power Apps, Power Automate, Power BI, and Power Virtual Agents.
+  It provides APIs for accessing Dataverse, managing environments, and
+  integrating with external services through connectors.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Low-Code
+  - Power Apps
+  - Power Automate
+  - Power BI
+  - Dataverse
+  - Microsoft
 url: https://raw.githubusercontent.com/api-evangelist/microsoft-power-platform/refs/heads/main/apis.yml
+created: '2024-01-01'
+modified: '2026-03-16'
+specificationVersion: '0.19'
 apis:
   - aid: microsoft-power-platform:dataverse-api
     name: Microsoft Dataverse Web API
@@ -7,7 +25,7 @@ apis:
       - Dataverse
       - Data Platform
       - OData
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://{org}.api.crm.dynamics.com/api/data/v9.2/
     humanURL: https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/overview
     properties:
@@ -24,7 +42,7 @@ apis:
       - Administration
       - Governance
       - Environments
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://api.bap.microsoft.com/
     humanURL: https://learn.microsoft.com/en-us/power-platform/admin/programmability-extensibility-overview
     properties:
@@ -42,12 +60,13 @@ apis:
       - Connectors
       - Integration
       - Custom Connectors
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    baseURL: https://api.example.com
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://learn.microsoft.com/en-us/connectors/overview
     properties:
       - url: https://learn.microsoft.com/en-us/connectors/overview
         type: Documentation
+      - url: https://learn.microsoft.com/en-us/connectors/custom-connectors/
+        type: Getting Started
     description: >-
       Power Platform Connectors provide pre-built integrations with hundreds
       of external services and enable developers to create custom connectors
@@ -57,16 +76,26 @@ apis:
 common:
   - type: Portal
     url: https://make.powerapps.com/
-  - type: Developer Portal
-    url: https://developer.microsoft.com/
+  - type: Website
+    url: https://powerplatform.microsoft.com/
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/power-platform/
   - type: Pricing
     url: https://powerapps.microsoft.com/en-us/pricing/
+  - type: Authentication
+    url: https://learn.microsoft.com/en-us/power-platform/admin/programmability-authentication-v2
+  - type: Blog
+    url: https://powerplatform.microsoft.com/en-us/blog/
+  - type: Community
+    url: https://community.powerplatform.com/
   - type: Terms of Service
     url: https://www.microsoft.com/en-us/legal/terms-of-use
   - type: Privacy Policy
     url: https://privacy.microsoft.com/en-us/privacystatement
   - type: Support
     url: https://support.microsoft.com/
+  - type: Status
+    url: https://status.powerplatform.microsoft.com/
 maintainers:
-  - name: Kin Lane
+  - FN: Kin Lane
     email: kin@apievangelist.com
