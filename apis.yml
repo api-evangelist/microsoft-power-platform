@@ -8,12 +8,12 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
+  - Dataverse
   - Low-Code
+  - Microsoft
   - Power Apps
   - Power Automate
   - Power BI
-  - Dataverse
-  - Microsoft
 url: https://raw.githubusercontent.com/api-evangelist/microsoft-power-platform/refs/heads/main/apis.yml
 created: '2024-01-01'
 modified: '2026-03-16'
@@ -22,8 +22,8 @@ apis:
   - aid: microsoft-power-platform:dataverse-api
     name: Microsoft Dataverse Web API
     tags:
-      - Dataverse
       - Data Platform
+      - Dataverse
       - OData
     image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://{org}.api.crm.dynamics.com/api/data/v9.2/
@@ -40,8 +40,8 @@ apis:
     name: Power Platform Admin API
     tags:
       - Administration
-      - Governance
       - Environments
+      - Governance
     image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://api.bap.microsoft.com/
     humanURL: https://learn.microsoft.com/en-us/power-platform/admin/programmability-extensibility-overview
@@ -58,8 +58,8 @@ apis:
     name: Power Platform Connectors
     tags:
       - Connectors
-      - Integration
       - Custom Connectors
+      - Integration
     image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://learn.microsoft.com/en-us/connectors/overview
     properties:
