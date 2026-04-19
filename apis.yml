@@ -16,7 +16,7 @@ tags:
   - Power BI
 url: https://raw.githubusercontent.com/api-evangelist/microsoft-power-platform/refs/heads/main/apis.yml
 created: '2024-01-01'
-modified: '2026-03-16'
+modified: '2026-04-19'
 specificationVersion: '0.19'
 apis:
   - aid: microsoft-power-platform:dataverse-api
@@ -66,7 +66,7 @@ apis:
       - url: https://learn.microsoft.com/en-us/connectors/overview
         type: Documentation
       - url: https://learn.microsoft.com/en-us/connectors/custom-connectors/
-        type: Getting Started
+        type: GettingStarted
     description: >-
       Power Platform Connectors provide pre-built integrations with hundreds
       of external services and enable developers to create custom connectors
@@ -76,8 +76,6 @@ apis:
 common:
   - type: Portal
     url: https://make.powerapps.com/
-  - type: Website
-    url: https://powerplatform.microsoft.com/
   - type: Documentation
     url: https://learn.microsoft.com/en-us/power-platform/
   - type: Pricing
@@ -86,16 +84,20 @@ common:
     url: https://learn.microsoft.com/en-us/power-platform/admin/programmability-authentication-v2
   - type: Blog
     url: https://powerplatform.microsoft.com/en-us/blog/
-  - type: Community
-    url: https://community.powerplatform.com/
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://www.microsoft.com/en-us/legal/terms-of-use
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://privacy.microsoft.com/en-us/privacystatement
   - type: Support
     url: https://support.microsoft.com/
-  - type: Status
+  - type: StatusPage
     url: https://status.powerplatform.microsoft.com/
+  - type: Features
+    url: https://powerplatform.microsoft.com/en-us/what-is-power-platform/
+  - type: UseCases
+    url: https://powerplatform.microsoft.com/en-us/customer-stories/
+  - type: Integrations
+    url: https://learn.microsoft.com/en-us/connectors/overview
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
