@@ -74,6 +74,10 @@ apis:
       data access, making external services available to Power Apps, Power
       Automate, and Logic Apps.
 common:
+  - type: GitHubOrganization
+    url: https://github.com/microsoft
+  - type: LinkedIn
+    url: https://www.linkedin.com/showcase/microsoft-power-platform
   - type: Portal
     url: https://make.powerapps.com/
   - type: Documentation
