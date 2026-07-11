@@ -1,0 +1,19 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/microsoft-power-platform-openapi.yml
+schemes:
+- name: oauth2
+  source: openapi/microsoft-power-platform-openapi.yml
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+    tokenUrl: https://login.microsoftonline.com/common/oauth2/v2.0/token
+  description: Microsoft Entra ID OAuth 2.0. Use the resource/scope corresponding to the Dataverse
+    environment, e.g. https://{org}.api.crm.dynamics.com/.default for client credentials.
+scopes:
+- scope: https://{org}.api.crm.dynamics.com/.default
+  description: Full Dataverse access scoped to the environment
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/microsoft-power-platform-openapi.yml
