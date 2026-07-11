@@ -74,6 +74,10 @@ apis:
       data access, making external services available to Power Apps, Power
       Automate, and Logic Apps.
 common:
+  - type: DomainSecurity
+    url: security/microsoft-power-platform-domain-security.yml
+  - type: Authentication
+    url: authentication/microsoft-power-platform-authentication.yml
   - type: OAuthScopes
     url: scopes/microsoft-power-platform-scopes.yml
   - type: GitHubOrganization
