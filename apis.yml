@@ -74,6 +74,8 @@ apis:
       data access, making external services available to Power Apps, Power
       Automate, and Logic Apps.
 common:
+  - type: AgenticAccess
+    url: agentic-access/microsoft-power-platform-agentic-access.yml
   - type: DomainSecurity
     url: security/microsoft-power-platform-domain-security.yml
   - type: Authentication
