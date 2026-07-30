@@ -6,7 +6,20 @@ description: >-
   It provides APIs for accessing Dataverse, managing environments, and
   integrating with external services through connectors.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/microsoft-power-platform.png
 tags:
   - Dataverse
   - Low-Code
@@ -19,60 +32,77 @@ created: '2024-01-01'
 modified: '2026-04-19'
 specificationVersion: '0.19'
 apis:
-  - aid: microsoft-power-platform:dataverse-api
-    name: Microsoft Dataverse Web API
-    tags:
-      - Data Platform
-      - Dataverse
-      - OData
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://{org}.api.crm.dynamics.com/api/data/v9.2/
-    humanURL: https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/overview
-    properties:
-      - url: https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/overview
-        type: Documentation
-    description: >-
-      The Microsoft Dataverse Web API provides OData v4 RESTful access to
-      the Dataverse data platform that underpins Power Platform. Developers
-      can perform CRUD operations on tables, execute actions and functions,
-      manage metadata, and query data using standard OData conventions.
-  - aid: microsoft-power-platform:admin-api
-    name: Power Platform Admin API
-    tags:
-      - Administration
-      - Environments
-      - Governance
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://api.bap.microsoft.com/
-    humanURL: https://learn.microsoft.com/en-us/power-platform/admin/programmability-extensibility-overview
-    properties:
-      - url: https://learn.microsoft.com/en-us/power-platform/admin/programmability-extensibility-overview
-        type: Documentation
-    description: >-
-      The Power Platform Admin API enables programmatic management of Power
-      Platform environments, connectors, data loss prevention policies, and
-      tenant settings. Administrators can create and manage environments,
-      configure security roles, and enforce governance policies across the
-      organization.
-  - aid: microsoft-power-platform:connectors-api
-    name: Power Platform Connectors
-    tags:
-      - Connectors
-      - Custom Connectors
-      - Integration
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://learn.microsoft.com/en-us/connectors/overview
-    properties:
-      - url: https://learn.microsoft.com/en-us/connectors/overview
-        type: Documentation
-      - url: https://learn.microsoft.com/en-us/connectors/custom-connectors/
-        type: GettingStarted
-    description: >-
-      Power Platform Connectors provide pre-built integrations with hundreds
-      of external services and enable developers to create custom connectors
-      using OpenAPI definitions. Connectors abstract API authentication and
-      data access, making external services available to Power Apps, Power
-      Automate, and Logic Apps.
+- aid: microsoft-power-platform:dataverse-api
+  name: Microsoft Dataverse Web API
+  tags:
+  - Data Platform
+  - Dataverse
+  - OData
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  baseURL: https://{org}.api.crm.dynamics.com/api/data/v9.2/
+  humanURL: https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/overview
+  properties:
+  - url: https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/overview
+    type: Documentation
+  description: >-
+    The Microsoft Dataverse Web API provides OData v4 RESTful access to the Dataverse data platform that
+    underpins Power Platform. Developers can perform CRUD operations on tables, execute actions and functions,
+    manage metadata, and query data using standard OData conventions.
+- aid: microsoft-power-platform:admin-api
+  name: Power Platform Admin API
+  tags:
+  - Administration
+  - Environments
+  - Governance
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  baseURL: https://api.bap.microsoft.com/
+  humanURL: >-
+    https://learn.microsoft.com/en-us/power-platform/admin/programmability-extensibility-overview
+  properties:
+  - url: >-
+      https://learn.microsoft.com/en-us/power-platform/admin/programmability-extensibility-overview
+    type: Documentation
+  description: >-
+    The Power Platform Admin API enables programmatic management of Power Platform environments, connectors,
+    data loss prevention policies, and tenant settings. Administrators can create and manage environments,
+    configure security roles, and enforce governance policies across the organization.
+- aid: microsoft-power-platform:connectors-api
+  name: Power Platform Connectors
+  tags:
+  - Connectors
+  - Custom Connectors
+  - Integration
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://learn.microsoft.com/en-us/connectors/overview
+  properties:
+  - url: https://learn.microsoft.com/en-us/connectors/overview
+    type: Documentation
+  - url: https://learn.microsoft.com/en-us/connectors/custom-connectors/
+    type: GettingStarted
+  description: >-
+    Power Platform Connectors provide pre-built integrations with hundreds of external services and enable
+    developers to create custom connectors using OpenAPI definitions. Connectors abstract API authentication
+    and data access, making external services available to Power Apps, Power Automate, and Logic Apps.
+- aid: microsoft-power-platform:microsoft-power-platform-metadata-api
+  name: Microsoft Power Platform Metadata API
+  description: The Metadata API from Microsoft Power Platform — 3 operation(s) for metadata.
+  humanURL: https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/overview
+  baseURL: https://{org}.api.crm.dynamics.com/api/data/v9.2/
+  tags:
+  - Metadata
+  properties:
+  - type: OpenAPI
+    url: openapi/microsoft-power-platform-metadata-api-openapi.yml
+- aid: microsoft-power-platform:microsoft-power-platform-records-api
+  name: Microsoft Power Platform Records API
+  description: The Records API from Microsoft Power Platform — 2 operation(s) for records.
+  humanURL: https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/overview
+  baseURL: https://{org}.api.crm.dynamics.com/api/data/v9.2/
+  tags:
+  - Records
+  properties:
+  - type: OpenAPI
+    url: openapi/microsoft-power-platform-records-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/microsoft-power-platform-agentic-access.yml
