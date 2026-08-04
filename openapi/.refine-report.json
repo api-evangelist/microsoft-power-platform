@@ -1,0 +1,16 @@
+{
+  "provider": "microsoft-power-platform",
+  "sources": [
+    "microsoft-power-platform-metadata-api-openapi.yml",
+    "microsoft-power-platform-records-api-openapi.yml"
+  ],
+  "outputs": [
+    "microsoft-power-platform-metadata-api-openapi.yml",
+    "microsoft-power-platform-records-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
